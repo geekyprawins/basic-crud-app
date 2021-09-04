@@ -4,28 +4,37 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Basic CRUD App</title>
+    <title>Marvel Quotes🤩</title>
+    <link rel="stylesheet" href="/styles.css">
+   
   </head>
   <body>
     <h1>May the Node be with you!✌️</h1>
 
     <form action="/quotes" method="POST">
-      <input type="text" placeholder="name" name="name" />
-      <input type="text" placeholder="quote" name="quote"/>
-        
-      <button type="submit">SUBMIT</button>
+<label for="char">Enter the character name: </label>
+<div></div>
+      <input type="text" placeholder="Character name" name="name" id="char" />
+<div class="divider"></div> 
+<label for="quo">Enter their quote: </label>
+<div>
+</div>    
+ <input type="text" placeholder="Quote" name="quote" id="quo"/>
+<div class="divider"></div>
+   <button type="submit">SUBMIT</button>
+
     </form>
 <ul class="quotes">
     <!-- using the 'quotes' object sent back -->
 <% for(var i=0; i<quotes.length;i++) {%>
     <li class="quote">
-        <span><%= quotes[i].name %></span>:
-        <span><%= quotes[i].quote %></span>
+        <span id="char"><%= quotes[i].name %></span>:
+        <span id="quo"><%= quotes[i].quote %></span>
     </li>
     <% } %>
 
 </ul>
-    
+ <div id="modify"> 
 <div>
 <h2>Thanos Invades!</h2>
 <p>Replace Tony's quote with Thanos' quote :)</p>
@@ -38,6 +47,7 @@
 </div>
 
 <div id="message"></div>
+</div>  
 <script src="/main.js"></script>
   </body>
 </html>

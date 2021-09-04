@@ -1,0 +1,36 @@
+body {
+  background-color: cornflowerblue;
+  /* align-content:flex-end; */
+}
+
+h1 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 500;
+  text-decoration: underline wavy black;
+  color: red;
+  text-align: center;
+}
+ul {
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.divider {
+height: 20px;
+}
+form{
+
+margin-left: 30%;
+}
+#modify{
+margin-left: 25%;
+}
+span#char{
+font-size: large;
+font-weight: 700;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+span#quo{
+font-style: italic;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
