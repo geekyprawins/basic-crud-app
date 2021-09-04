@@ -89,13 +89,14 @@ MongoClient.connect(connectionString)
 
 
 
-    
+
   })
   .catch((err) => console.log(err));
 
 // Listen at a port
-app.listen(3000, function () {
-  console.log("Listening at port http://localhost:3000 🦻🦻🦻");
+const port = process.env.PORT || 3000 ; 
+app.listen(port, function () {
+  console.log(`Listening at port ${port} 🦻🦻🦻`);
 });
 
 // app.get("/", function (req, res) {
